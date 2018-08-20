@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>JavaScript Code Challenge</title>
+  <link rel="stylesheet" href="./src/styles.css">
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -15,7 +16,7 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="imageContainer container">
     <div class="row" id="image_content">
       <div class="card col-md-4"></div>
       <div id="image_card" class="card col-md-4">
@@ -24,10 +25,10 @@
           <span>Likes:
             <span id="likes">0</span>
           </span>
-          <button id="like_button">Like</button>
+          <button id="like_button" class="btn btn-success">Like</button>
           <form id="comment_form">
             <input id="comment_input" type="text" name="comment" placeholder="Add Comment"/>
-            <input type="submit" value="Submit"/>
+            <input type="submit" class="btn btn-primary" value="Submit"/>
           </form>
           <ul id="comments">
 
